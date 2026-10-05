@@ -1,0 +1,14 @@
+name: Workflow that inspects the runner on push
+on: push
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step checkout to repo
+        uses: actions/checkout@latest
+      - name: print the runner's kernel details and the repository file listing
+        run: |
+          uname -a
+          ls
+      - name: files count
+        run: ls -l | wc
