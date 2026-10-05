@@ -1,0 +1,8 @@
+name: Workflow file for simple greet
+on: push
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print hello from shell
+        run: echo "Hello from Shell"
