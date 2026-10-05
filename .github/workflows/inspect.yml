@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First step checkout to repo
-        uses: actions/checkout@74ae75e
+        uses: actions/checkout@v4
       - name: print the runner's kernel details and the repository file listing
         run: |
           uname -a
